@@ -24,6 +24,11 @@ progress::-webkit-progress-value {
 }
 
 @font-face {
+    font-family: "Qanelas-bold";
+    src: url("../fonts/Qanelas-Bold.woff") format("woff");
+}
+
+@font-face {
     font-family: "Liana";
     src: url("../fonts/9099.ttf");
 }
@@ -35,7 +40,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 25px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .header {
@@ -53,14 +58,14 @@ body {
     max-width: 1200px;
     max-height: 76px;
     display: flex;
-    /* flex-wrap: nowrap; */
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
+    padding: 42px 10px;
     border-bottom: solid;
-    border-width: 2px;
-    border-radius: 0px 0px 10px 10px;
+    border-width: 1px;
+    border-radius: 0px 0px 2px 2px;
     margin: 0 auto;
+    font-family: "Qanelas-bold";
 }
 
 .main__logo {
@@ -101,7 +106,7 @@ body {
     font-size: 100px;
     line-height: 100px;
     margin: 0 auto;
-    padding-top: 53px;
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -112,7 +117,7 @@ body {
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 44px;
+    padding-top: 34px;
 }
 
 .top__goal {
@@ -156,6 +161,10 @@ body {
     color: #FFFFFF;
 }
 
+.test a:link {
+    color: #FFFFFF;
+}
+
 .test+.test {
     background-color: transparent;
     border: 1px solid #0086C9;
@@ -176,11 +185,19 @@ body {
     color: #0086C9;
 }
 
+.test+.test a:link {
+    color: #FFFFFF;
+}
+
 .test+.test+.test {
     padding: 12px 16px 13px 16px;
 }
 
 a.top__button a:visited {
+    color: #FFFFFF;
+}
+
+a.top__button a:link {
     color: #FFFFFF;
 }
 
@@ -193,9 +210,8 @@ a.top__button a:visited {
 
 .top__content {
     position: relative;
-    top: 120px;
     max-width: 1426px;
-    max-height: 375px;
+    max-height: 320px;
     background-color: transparent;
     background-image: url(../images/cloud5.svg), url(../images/cloud\ 4.svg), url(../images/cloud\ 7.svg), url(../images/cloud\ 2.svg), url(../images/cloud\ 8.svg);
     background-repeat: repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -206,12 +222,15 @@ a.top__button a:visited {
 
 .top__numbers {
     display: flex;
+    max-width: 1180px;
     justify-content: center;
     padding-bottom: 159px;
+    font-family: "Qanelas-bold";
 }
 
 .number__count {
     margin-top: 35px;
+    padding-left: 210px;
 }
 
 .number__count+.number__count {
@@ -222,9 +241,15 @@ a.top__button a:visited {
     font-size: 50px;
     line-height: 62px;
     color: #333333;
-    background-image: url(../images/line.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
+}
+
+.line {
+    width: 80px;
+    height: 5px;
+    border-bottom: 5px solid #FF5C26;
+    position: absolute;
 }
 
 .number__text {
@@ -233,6 +258,7 @@ a.top__button a:visited {
     font-size: 16px;
     line-height: 20px;
     max-width: 280px;
+    max-height: 40px;
     /* max-height: 160px; */
     text-overflow: ellipsis;
     /* will make [...] at the end */
@@ -249,28 +275,26 @@ a.top__button a:visited {
 }
 
 .our__projects {
+    top: -26px;
     position: relative;
-    z-index: 3;
-}
-
-.projects__bg {
-    /*  min-height: 1px; */
-    max-width: 1600px;
-    height: 556px;
-    position: relative;
-    top: -150px;
-    /* margin-top: 150px; */
-    background-color: #F2F2F2;
-    z-index: 2;
-    font-size: 0;
-}
-
-.our__projects {
+    /* z-index: 3; */
     max-width: 690px;
     max-height: 240px;
     background-color: #00A0E3;
     z-index: 5;
 }
+
+.projects__bg {
+    max-width: 1600px;
+    height: 556px;
+    position: relative;
+    top: -210px;
+    background-color: #F2F2F2;
+    z-index: 2;
+    font-size: 0;
+}
+
+.our__projects {}
 
 .projects__title {
     padding: 39px 164px 143px 210px;
@@ -278,20 +302,22 @@ a.top__button a:visited {
     line-height: 58px;
     text-align: center;
     color: #FFFFFF;
+    font-family: "Qanelas-bold";
 }
 
 .projects__inner {
     position: relative;
-    top: -650px;
+    top: -705px;
     margin: 0 auto;
     max-width: 1180px;
-    max-height: 590px;
+    max-height: 595px;
     min-width: 0;
     z-index: 34;
 }
 
 .vol__image {
-    max-width: 378px;
+    max-width: 380px;
+    border: 1px solid #CCCCCC;
 }
 
 .projects__slider {
@@ -341,10 +367,9 @@ a.top__button a:visited {
 .projects-box {
     position: relative;
     width: 380px;
-    max-height: 590px;
+    max-height: 592px;
     border-radius: 2px 2px 0px 0px;
-    border: 1px solid #CCCCCC;
-    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+   /*  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20); */
     background-color: #FFFFFF;
 }
 
@@ -368,7 +393,7 @@ a.top__button a:visited {
     height: 100px;
     width: 380px;
     background: transparent;
-    background: linear-gradient(180deg, #000000 0%, rgba(196, 196, 196, 0) 100%);
+    background: linear-gradient(180deg, #000000 0%, rgba(196, 196, 196, 0) 80%);
     position: absolute;
     opacity: 0.8;
 }
@@ -383,19 +408,20 @@ a.top__button a:visited {
 }
 
 .projects__meter {
-    width: 100%;
+    width: 378px;
     position: relative;
     top: -18px;
     color: #00A0E3;
     border: 0;
     height: 11px;
-    border-radius: 9px;
+    border-radius: 0px;
     text-align: center;
 }
 
 .projects-box__content {
     background-color: #FFFFFF;
-    width: 378px;
+    width: 380px;
+    border: 1px solid #CCCCCC;
 }
 
 .projects-box__numbers {
@@ -403,12 +429,17 @@ a.top__button a:visited {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    font-family: "Qanelas-bold";
 }
 
+.get1{
+    font-family: "Qanelas";
+}
 .need {
     display: inline-block;
     margin-top: 9px;
     color: #FF5C26;
+    font-family: "Qanelas";
 }
 
 .projects-box__text {
@@ -494,7 +525,7 @@ a.help__us {
 }
 
 .helpers {
-    max-margin: 0 auto;
+    margin: 0 auto;
     max-width: 1180px;
     max-height: 590px;
     min-width: 0;
@@ -509,13 +540,15 @@ a.help__us {
     font-weight: bold;
     font-style: normal;
     margin-bottom: 40px;
+    font-family: "Qanelas-bold";
 }
 
 .helpers__box {
     width: 380px;
     max-height: 193px;
-    border: 2px solid;
-    border-color: #CCCCCC;
+    border: 1px solid  #CCCCCC;
+    border-radius: 2px;
+    
 }
 
 .helper {
@@ -529,6 +562,7 @@ a.help__us {
     line-height: 25px;
     color: #333333;
     padding: 22px 0px 7px 120px;
+    font-family: "Qanelas-bold";
 }
 
 .helper__about {
@@ -546,7 +580,7 @@ a.help__us {
     /* width: 106px; */
     display: flex;
     justify-content: space-around;
-    margin: 17px 155px 4px 119px;
+    margin: 10px 155px 31px 119px;
     min-width: 0;
 }
 
@@ -608,12 +642,12 @@ a.help__us {
 
 .members {
     margin-top: 100px;
-    margin-left: 147px;
+  /*   margin-left: 147px;
     position: relative;
-    z-index: 2;
+    z-index: 2; */
     max-width: 1600px;
     max-height: 580px;
-    background: url(../images/background2.png);
+    background: url(../images/background_companies.png);
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -623,17 +657,19 @@ a.help__us {
     padding: 36px 0px 17px 0px;
     font-size: 50px;
     line-height: 62px;
+    font-family: "Qanelas-bold";
 }
 
 .companies__logo {
     max-width: 970px;
     max-height: 650px;
-    position: relative;
-    left: 21%;
+    /* position: relative;
+    left: 21%; */
     background: #F7F7F7;
     border: 1px solid #CCCCCC;
     border-radius: 2px;
-    z-index: 1;
+   /*  z-index: 1; */
+    margin: 0 auto;
 }
 
 .companies__logo a:active {
@@ -645,6 +681,10 @@ a.help__us {
     color: #00A0E3;
     text-align: center;
 }
+.companies__logo a:link {
+    color: #00A0E3;
+    /* text-align: center; */
+}
 
 .logo__listone {
     display: flex;
@@ -654,16 +694,17 @@ a.help__us {
     align-content: space-around;
     list-style: none;
     margin: 20px 20px 0px 30px;
-    padding: 0;
+    padding: 0 40px;
     max-width: 915px;
     max-height: 135px;
     border-bottom: 1px solid #CCCCCC;
+    
 }
 
 .logo__list1 {
     max-width: 305px;
     max-height: 135px;
-    padding: 30px 20px 30px 0px;
+    padding: 30px 50px 30px 0px;
     align-items: center;
     border-right: 1px solid #CCCCCC;
 }
@@ -680,7 +721,7 @@ a.help__us {
     align-content: space-around;
     list-style: none;
     margin: 0px 20px 0px 30px;
-    padding: 0;
+    padding: 0 40px;
     max-width: 915px;
     max-height: 135px;
     border-bottom: 1px solid #CCCCCC;
@@ -689,7 +730,7 @@ a.help__us {
 .logo__list2 {
     max-width: 305px;
     max-height: 135px;
-    padding: 30px 20px 30px 0px;
+    padding: 30px 50px 30px 0px;
     align-items: center;
     border-right: 1px solid #CCCCCC;
 }
@@ -706,7 +747,7 @@ a.help__us {
     align-content: space-around;
     list-style: none;
     margin: 0px 20px 0px 30px;
-    padding: 0;
+    padding: 0 40px;
     max-width: 915px;
     max-height: 135px;
 }
@@ -714,7 +755,7 @@ a.help__us {
 .logo__list3 {
     max-width: 305px;
     max-height: 135px;
-    padding: 20px 20px 30px 0px;
+    padding: 20px 50px 30px 0px;
     align-items: center;
     border-right: 1px solid #CCCCCC;
 }
@@ -729,6 +770,19 @@ a.help__us {
     text-align: center;
     font-size: 16px;
     line-height: 19px;
+    text-color: #00A0E3;
+}
+
+.more__logo a:link{
+    color: #00A0E3;
+}
+
+.more__logo a:visited{
+    color: #00A0E3;
+}
+
+.more__logo a:active{
+    color: #00A0E3;
 }
 
 .go__in {
@@ -757,6 +811,7 @@ a.help__us {
     font-weight: bold;
     line-height: 43px;
     color: #333333;
+    font-family: "Qanelas-bold";
 }
 
 .good__box {
@@ -771,6 +826,7 @@ a.help__us {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    font-family: "Qanelas-bold";
 }
 
 .good__info {
@@ -786,7 +842,7 @@ a.help__us {
     position: absolute;
     left: 80%;
     top: 10%;
-    ;
+    
 }
 
 .good__date {
@@ -887,7 +943,7 @@ a.help__us {
     top: -70px;
     max-width: 1600px;
     max-height: 480px;
-    background-image: url(../images/want_bg.png);
+    background-image: url(../images/background_bottom.svg);
     z-index: 1;
 }
 
@@ -980,7 +1036,7 @@ a.help__us {
     margin-right: 210px;
 }
 
-.modes {
+/* .modes {
     display: flex;
     list-style: none;
     justify-content: flex-end;
@@ -993,7 +1049,7 @@ a.help__us {
 
 .mode {
     padding-left: 10px;
-}
+} */
 
 .insta__footer {
     margin-right: 210px;
