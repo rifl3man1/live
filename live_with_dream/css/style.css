@@ -34,24 +34,35 @@ progress::-webkit-progress-value {
 }
 
 body {
-    max-width: 1600px;
+    width: 100%;
+    height: 100vh;
     color: #0086C9;
     font-family: "Qanelas";
     font-weight: bold;
     font-size: 20px;
     line-height: 25px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .header {
-    max-width: 1600px;
+    width: 100%;
     max-height: 601px;
+    /*   height: 100%; */
     /* margin: 0 auto;  */
 }
 
 .container {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
+    background-position: center center fixed;
+    /*   width: 100%; */
+    background-size: cover;
+    -moz-background-size: cover;
+    /* Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover;
+    /* Opera 9.6+ */
 }
 
 .header__inner {
@@ -132,7 +143,7 @@ body {
 .top__buttons {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin: 45px;
     padding: 0 10px 90px;
 }
 
@@ -210,17 +221,18 @@ a.top__button a:link {
 
 .top__content {
     position: relative;
-    max-width: 1426px;
+    max-width: 1920px;
     max-height: 320px;
     background-color: transparent;
     background-image: url(../images/cloud5.svg), url(../images/cloud\ 4.svg), url(../images/cloud\ 7.svg), url(../images/cloud\ 2.svg), url(../images/cloud\ 8.svg);
     background-repeat: repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: top center, 5% 60%, center, 90% 50%, 70% 80%;
-    margin: 40px auto 0;
+    margin: 40px auto;
     z-index: 1;
 }
 
 .top__numbers {
+    margin: 0 auto;
     display: flex;
     max-width: 1180px;
     justify-content: center;
@@ -268,7 +280,8 @@ a.top__button a:link {
 }
 
 .projects__section {
-    max-width: 1600px;
+    margin: 0 auto;
+    max-width: 100%;
     max-height: 760px;
     z-index: 2;
     /*   padding-top: 50px; */
@@ -285,7 +298,7 @@ a.top__button a:link {
 }
 
 .projects__bg {
-    max-width: 1600px;
+    max-width: 100%;
     height: 556px;
     position: relative;
     top: -210px;
@@ -369,14 +382,35 @@ a.top__button a:link {
     width: 380px;
     max-height: 592px;
     border-radius: 2px 2px 0px 0px;
-   /*  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20); */
+    /*  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20); */
     background-color: #FFFFFF;
 }
 
-.projects__ball {
+.meter {
+    height: 8px;
+    position: relative;
+    background: #FFFF;
+    border-radius: 0;
+    margin: 0px 0;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter>span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #00A0E3;
+    background-image: linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    /* overflow: hidden; */
+}
+.meter>span:after {
+    content: "25%";
     position: absolute;
-    top: 39%;
-    left: 80%;
+    top: -185% ;
+    left: 70%;
     width: 55px;
     height: 35px;
     background: #FFFFFF;
@@ -387,7 +421,26 @@ a.top__button a:link {
     line-height: 20px;
     text-align: center;
     padding: 8px 12px 7px 12px;
+
 }
+
+
+/* .projects__ball {
+    position: relative;
+    top: -250%;
+    left: 20%;
+    width: 55px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 1px solid #00A0E3;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 8px 12px 7px 12px;
+} */
+
 
 .projects-box__shadow {
     height: 100px;
@@ -420,8 +473,9 @@ a.top__button a:link {
 
 .projects-box__content {
     background-color: #FFFFFF;
-    width: 380px;
+    min-width: 380px;
     border: 1px solid #CCCCCC;
+    border-top: none;
 }
 
 .projects-box__numbers {
@@ -432,9 +486,10 @@ a.top__button a:link {
     font-family: "Qanelas-bold";
 }
 
-.get1{
+.get1 {
     font-family: "Qanelas";
 }
+
 .need {
     display: inline-block;
     margin-top: 9px;
@@ -546,9 +601,8 @@ a.help__us {
 .helpers__box {
     width: 380px;
     max-height: 193px;
-    border: 1px solid  #CCCCCC;
+    border: 1px solid #CCCCCC;
     border-radius: 2px;
-    
 }
 
 .helper {
@@ -642,18 +696,27 @@ a.help__us {
 
 .members {
     margin-top: 100px;
-  /*   margin-left: 147px;
+    /*   margin-left: 147px;
     position: relative;
     z-index: 2; */
-    max-width: 1600px;
-    max-height: 580px;
-    background: url(../images/background_companies.png);
+    max-width: 100%;
+    min-height: 580px;
+    background: url(../images/background.png);
     background-repeat: no-repeat;
     text-align: center;
+    background-position: center center fixed;
+    /*   width: 100%; */
+    background-size: cover;
+    -moz-background-size: cover;
+    /* Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover;
+    /* Opera 9.6+ */
 }
 
 .companies {
-    color: #FFFFFF;
+    color: #333;
     padding: 36px 0px 17px 0px;
     font-size: 50px;
     line-height: 62px;
@@ -668,7 +731,7 @@ a.help__us {
     background: #F7F7F7;
     border: 1px solid #CCCCCC;
     border-radius: 2px;
-   /*  z-index: 1; */
+    /*  z-index: 1; */
     margin: 0 auto;
 }
 
@@ -681,6 +744,7 @@ a.help__us {
     color: #00A0E3;
     text-align: center;
 }
+
 .companies__logo a:link {
     color: #00A0E3;
     /* text-align: center; */
@@ -698,7 +762,6 @@ a.help__us {
     max-width: 915px;
     max-height: 135px;
     border-bottom: 1px solid #CCCCCC;
-    
 }
 
 .logo__list1 {
@@ -773,15 +836,15 @@ a.help__us {
     text-color: #00A0E3;
 }
 
-.more__logo a:link{
+.more__logo a:link {
     color: #00A0E3;
 }
 
-.more__logo a:visited{
+.more__logo a:visited {
     color: #00A0E3;
 }
 
-.more__logo a:active{
+.more__logo a:active {
     color: #00A0E3;
 }
 
@@ -842,7 +905,6 @@ a.help__us {
     position: absolute;
     left: 80%;
     top: 10%;
-    
 }
 
 .good__date {
@@ -916,8 +978,8 @@ a.help__us {
 }
 
 .want__help {
-    max-width: 1600px;
-    max-height: 500px;
+    width: 100%;
+    min-height: 500px;
     margin: 100px 0 50px 0;
 }
 
@@ -938,13 +1000,26 @@ a.help__us {
     color: #FFFFFF;
 }
 
-.want__wrapper {
-    position: relative;
-    top: -70px;
-    max-width: 1600px;
+.want__help {
+    max-width: 100%;
     max-height: 480px;
     background-image: url(../images/background_bottom.svg);
     z-index: 1;
+    background-position: center center fixed;
+    /*   width: 100%; */
+    background-size: cover;
+    -moz-background-size: cover;
+    /* Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover;
+    /* Opera 9.6+ */
+}
+
+.want__wrapper {
+    /* margin: 0 auto; */
+    position: relative;
+    top: -70px;
 }
 
 .want__inner {
