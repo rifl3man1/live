@@ -34,7 +34,7 @@ progress::-webkit-progress-value {
 }
 
 body {
-    width: 100%;
+    width:auto;
     height: 100vh;
     color: #0086C9;
     font-family: "Qanelas";
@@ -45,13 +45,10 @@ body {
 }
 
 .header {
-    width: 100%;
-    max-height: 601px;
+    width:auto;
+    min-height: 601px;
     /*   height: 100%; */
     /* margin: 0 auto;  */
-}
-
-.container {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-position: center center fixed;
@@ -63,6 +60,10 @@ body {
     /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: cover;
     /* Opera 9.6+ */
+}
+
+.container {
+    
 }
 
 .header__inner {
@@ -221,7 +222,7 @@ a.top__button a:link {
 
 .top__content {
     position: relative;
-    max-width: 1920px;
+    max-width: 100%;
     max-height: 320px;
     background-color: transparent;
     background-image: url(../images/cloud5.svg), url(../images/cloud\ 4.svg), url(../images/cloud\ 7.svg), url(../images/cloud\ 2.svg), url(../images/cloud\ 8.svg);
@@ -406,10 +407,11 @@ a.top__button a:link {
     position: relative;
     /* overflow: hidden; */
 }
+
 .meter>span:after {
     content: "25%";
     position: absolute;
-    top: -185% ;
+    top: -185%;
     left: 70%;
     width: 55px;
     height: 35px;
@@ -421,9 +423,7 @@ a.top__button a:link {
     line-height: 20px;
     text-align: center;
     padding: 8px 12px 7px 12px;
-
 }
-
 
 /* .projects__ball {
     position: relative;
@@ -440,7 +440,6 @@ a.top__button a:link {
     text-align: center;
     padding: 8px 12px 7px 12px;
 } */
-
 
 .projects-box__shadow {
     height: 100px;
@@ -575,7 +574,7 @@ a.help__us {
     /* position: relative; */
     max-width: 1180px;
     max-height: 320px;
-    margin: 140px auto;
+    margin: 10px auto;
     min-width: 0;
 }
 
@@ -691,7 +690,7 @@ a.help__us {
 }
 
 .our__members {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .members {
@@ -977,19 +976,8 @@ a.help__us {
     background-image: url(../images/arrow_next.svg);
 }
 
-.want__help {
-    width: 100%;
-    min-height: 500px;
-    margin: 100px 0 50px 0;
-}
 
-.wanthelp {
-    background-color: #00A0E3;
-    max-width: 890px;
-    max-height: 115px;
-    position: relative;
-    z-index: 2;
-}
+
 
 .main__question {
     display: block;
@@ -1001,8 +989,11 @@ a.help__us {
 }
 
 .want__help {
-    max-width: 100%;
-    max-height: 480px;
+    width: auto;
+    max-height: 580px;
+    margin: 100px 0px 50px 0px;
+    
+   /*  max-height: 480px; */
     background-image: url(../images/background_bottom.svg);
     z-index: 1;
     background-position: center center fixed;
@@ -1016,14 +1007,17 @@ a.help__us {
     /* Opera 9.6+ */
 }
 
-.want__wrapper {
-    /* margin: 0 auto; */
+.wanthelp {
+    background-color: #00A0E3;
+    max-width: 890px;
+    max-height: 115px;
     position: relative;
-    top: -70px;
+    z-index: 2;
+    bottom: 47px;
 }
-
 .want__inner {
-    padding: 100px 0px 30px 290px;
+    padding: 50px 0px 0px 350px;
+    height: 480px;
 }
 
 .want__form {
@@ -1035,13 +1029,11 @@ a.help__us {
 }
 
 .want__image {
-    position: relative;
-    /* left: 55%; */
-    right: -55%;
-    bottom: 390px;
-    max-width: 481px;
-    max-height: 481px;
-    margin: 0;
+    position:relative;
+    top: -450px;
+    left: 800px;
+    width: 481px;
+    height: 481px;
 }
 
 .want__text {
@@ -1093,7 +1085,8 @@ a.help__us {
 }
 
 .insta__items {
-    position: relative;
+    
+   
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -13,12 +13,14 @@ $(function () {
         // infinite:true
         responsive: [
             {
-                breakpoint: 1199,
+                breakpoint: 1680,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
+                    centerPadding: '0px',
                     dots: true
+                    
                 }
             },
             {
@@ -54,11 +56,12 @@ $(function () {
         waitForAnimate: false,
         responsive: [
             {
-                breakpoint: 1199,
+                breakpoint: 1680,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
+                    centerPadding: '0px',
                     dots: true
                 }
             },
@@ -95,11 +98,12 @@ $(function () {
         waitForAnimate: false,
         responsive: [
             {
-                breakpoint: 1199,
+                breakpoint: 1680,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
+                    centerPadding: '0px',
                     dots: true
                 }
             },

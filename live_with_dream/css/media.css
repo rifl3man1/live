@@ -1,23 +1,75 @@
-@media (max-width:1930px) {
-    .top__content {
-        max-width: 1400px;
-        /* width: 100%; */
-    }
-    .container{
-        background-position:unset;
-    }
-    .top__buttons {
-        padding: 0 10px 150px;
+@media (min-width: 1921px) {
+    .want__image {
+        position: relative;
+        top: -450px;
+        left: 1300px;
+        width: 481px;
+        height: 481px;
     }
 }
 
-@media (max-width:1439px) {
-    .top__content {
-        margin: 0 auto;
-        top: 20px;
-        background-position: 10% 1%, 40% 60%, 60% 80%, 90% 100%, 10% 80%;
-    }
+@media (max-width:1920px) {
     .container {
+        background-position: unset;
+    }
+    .top__buttons {
+        padding: 0px 10px 100px 0px;
+        margin: 25px;
+    }
+    .number__count {
+        margin-top: 35px;
+        padding-left: 110px;
+    }
+    .number__count+.number__count {
+        padding-left: 74px;
+    }
+    .want__image {
+        position: relative;
+        top: -450px;
+        left: 900px;
+        width: 481px;
+        height: 481px;
+    }
+}
+
+@media (max-width:1681px) {
+    .helpers__slider .slick-arrow.slick-prev {
+        right: 61%;
+    }
+    .helpers__slider .slick-arrow.slick-next {
+        right: 36%;
+    }
+    .projects__slider .slick-arrow.slick-next {
+        right: 36%;
+    }
+    .projects__slider .slick-arrow.slick-prev {
+        right: 61%;
+    }
+    .good__slider .slick-arrow.slick-prev {
+        right: 61%;
+    }
+    .good__slider .slick-arrow.slick-next {
+        right: 36%;
+    }
+    .projects__inner {
+        max-width: 800px;
+    }
+    .helpers {
+        max-width: 800px;
+    }
+    .good__deeds {
+        max-width: 800px;
+    }
+    .top__buttons {
+        padding: 0px 10px 80px 0px;
+        margin: 25px;
+    }
+}
+
+@media (max-width:1440px) {
+    .header {
+        width: auto;
+        min-height: 590px;
         background-size: cover;
         -moz-background-size: cover;
         /* Firefox 3.6+ */
@@ -26,22 +78,53 @@
         -o-background-size: cover;
         /* Opera 9.6+ */
     }
+    .top__buttons {
+        padding: 15px 10px 20px;
+        margin: 0;
+    }
+    .top__title {
+        padding-top: 45px;
+    }
+    .top__content {
+        margin: 0px auto;
+    }
+    .want__inner {
+        padding: 0px 0px 0px 150px;
+    }
+    .insta__items {
+        position: relative;
+        /* top: 600px; */
+    }
     .companies {
         color: #333;
         font-size: 45px;
         line-height: 62px;
     }
     .number__text {
-        max-width: 250px;
         max-height: 270px;
     }
     .number__count {
         margin-top: 25px;
-        padding-left: 150px;
+        padding-left: 50px;
     }
-    .want__image {
+    /* .want__image {
         right: -65%;
         bottom: 350px;
+    } */
+    .top__numbers {
+        padding: 0 15px 25px 25px;
+    }
+    .want__help {
+        max-width: 1440px;
+        max-height: 450px;
+        margin: 100px 0 50px 0;
+    }
+    .want__image {
+        position: relative;
+        top: -480px;
+        left: 600px;
+        width: 481px;
+        height: 481px;
     }
     .qr {
         background-image: url(../images/logo_bottom_small.svg);
@@ -49,7 +132,7 @@
         height: 351px;
     }
     .insta__items {
-        justify-content: start;
+        justify-content: center;
     }
     .copy {
         margin-left: 150px;
@@ -67,59 +150,13 @@
     }
     .want__text {
         color: #333;
+    }
 }
 
-/* @media (max-width:1199px) {
-    .header__insta {
-        margin: 0 auto 0 10px;
-    }
-    .top__content {
-        margin: 0 auto;
-        top: 40px;
-        background-position: 0% 1%, 30% 50%, 50% 80%, 90% 100%, 10% 80%;
-    }
-    .top__numbers {
-        padding: 0px 55px 45px 55px;
-    }
-    .slick-track {
-        justify-content: space-around;
-        align-items: flex-end;
-    }
-    .slick-slide {
-        padding: 0 100px;
-    }
-    .slick-list {
-        margin: 0 -17px;
-    }
-    .number__count+.number__count {
-        padding-left: 100px;
-    }
-    .companies__logo {
-        position: relative;
-        left: 0%;
-    }
-} */
-
-/* @media (max-width:1128px) {
-    .slick-slide {
-        padding: 0 40px;
-    }
-    .our__helpers {
-        margin: 60px auto;
-    }
-    .want__inner {
-        padding: 100px 0px 30px 190px;
-    }
-    .want__form {
-        max-width: 320px;
-        max-height: 300px;
-    }
-} */
-
 @media (max-width:1024px) {
-    /*  .slick-slide {
-        padding: 0px 10px 0px 60px;
-    } */
+    .header {
+        min-height: 580px;
+    }
     .projects__inner {
         max-width: 800px;
     }
@@ -149,7 +186,6 @@
     }
     .top__content {
         margin: 0 auto;
-        top: 30px;
     }
     .number__count {
         margin-top: 5px;
@@ -161,15 +197,66 @@
     .number__text {
         max-width: 190px;
     }
+    .menu__item {
+        margin-left: 15px;
+    }
+
+
+
+
+
+
+    
+    .logo__listone {
+        margin: 20px 20px 0px 36px;
+        
+       /*  max-width: 800px; */
+        max-height: 135px;
+    }
+
+    .logo__list1 {
+        max-width: 260px;
+        max-height: 135px;
+        padding: 30px 29px 30px 0px;
+        
+    }
+    
+    .logo__two {
+        margin: 0px 20px 0px 30px;
+        padding: 0;
+        max-width: 800px;
+        max-height: 135px;
+    }
+    .logo__list2 {
+        max-width: 260px;
+        max-height: 135px;
+        padding: 30px 50px 30px 0px;
+            }
+    .logo__three {
+        margin: 0px 20px 0px 30px;
+        padding: 0 ;
+        max-width: 800px;
+        max-height: 135px;
+    }
+.logo__list3 {
+    max-width: 260px;
+    max-height: 135px;
+    padding: 20px 50px 30px 0px;
+    
+}
+
+
+
+
     .want__inner {
-        padding: 100px 0px 30px 50px;
+        padding: 0px 0px 30px 40px;
     }
     .want__form {
-        max-width: 320px;
+        max-width: 300px;
         max-height: 300px;
     }
     .want__image {
-        right: -60%;
+        left: 450px;
     }
     .insta__items {
         font-size: 12px;
@@ -186,7 +273,7 @@
     }
 }
 
-@media (max-width:950px) {
+/* @media (max-width:950px) {
     .menu__list-link {
         margin: 0 auto;
         font-size: 18px;
@@ -200,9 +287,7 @@
     .top__numbers {
         padding: 0 20px 40px;
     }
-    /*  .slick-slide {
-        padding: 0 30px;
-    } */
+    
     .top__content {
         margin: 0 auto;
         top: 40px;
@@ -259,7 +344,7 @@
         border: none;
         padding: 5px 5px 5px 0px;
     }
-}
+} */
 
 @media(max-width:910px) {
     .number__text {
@@ -428,6 +513,10 @@
 }
 
 @media(max-width:500px) {
+   
+    .header {
+        min-height: 480px;
+    }
     .header__inner {
         padding: 2px 0px;
     }
@@ -466,14 +555,6 @@
         padding: 2px 5px 13px 5px;
         margin: 0;
     }
-   /*  .top__buttons {
-        padding-bottom: 30px;
-    } */
-    /* .top__content {
-        margin: 0;
-        top: 5px;
-        background-position: top center, 0% 60%, center, 95% 65%, 55% 90%;
-    } */
     .slick-slide {
         padding: 0 60px;
     }
@@ -513,18 +594,54 @@
         justify-content: center;
         max-width: 300px;
         max-height: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        /* set value for the flex basis, the two properties above will evenly 
+        divide the space. */
+        flex-basis: 20px;
+              overflow: hidden;
+              border:none;
     }
-    .logo__two {
+    .logo__listtwo {
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 200px;
+        max-height: 70px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        /* set value for the flex basis, the two properties above will evenly 
+        divide the space. */
+        flex-basis: 20px;
+              overflow: hidden;
+              border:none;
+    }
+    .logo__listthree {
         margin: 0 auto;
         justify-content: center;
         max-width: 300px;
-        max-height: 200px;
+        max-height: 150px;
+        
+            flex-grow: 1;
+      flex-shrink: 1;
+      /* set value for the flex basis, the two properties above will evenly 
+      divide the space. */
+      flex-basis: 20px;
+            overflow: hidden;
+    
     }
-    .logo__three {
-        margin: 0 auto;
-        justify-content: center;
-        max-width: 300px;
-        max-height: 200px;
+    .top__goal {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 14px;
+        text-align: center;
+        padding-top: 15px;
+    }
+   
+    .top__charity{
+        padding-top: 8px;
+        font-size: 22px;
+        line-height: 28px;
     }
     .companies {
         font-size: 55px;
@@ -578,9 +695,6 @@
         margin: 0 auto;
         max-width: 375px;
         max-height: 526px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
     }
     .wanthelp {
         background-color: #00A0E3;
@@ -624,7 +738,36 @@
         margin-bottom: 50px;
     }
     .top__buttons {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+    }
+    .want__image {
+        position: relative;
+        left: 0px;
+       top: -100px; 
+        width: 341px;
+        height: 341px;
+    }
+    .want__inner {
+        padding: 40px 0px 30px 150px;
+        height: 480px;
+    }
+    .good__deeds {
+        max-width: 300px;
+            margin-top: 50px;
+        
+    }
+    .insta__items {
+        position: relative;
+        top: 85px; 
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #333333;
+        z-index: 10;
     }
 }
 
@@ -639,6 +782,17 @@
     /*  .main__logo {
         width: auto;
     } */
+
+    
+.header {
+    min-height: 450px;
+    background-size:  auto;
+    -moz-background-size: auto;
+    /* Firefox 3.6+ */
+    -webkit-background-size: auto;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size:  auto;
+}
     .header__inner {
         padding: 2px 0px;
     }
@@ -674,7 +828,7 @@
         margin: 0;
     }
     .top__buttons {
-        padding-bottom: 30px;
+        padding: 37px 0px 20px 10px;
     }
     /* .top__content {
         margin: 0;
@@ -697,10 +851,10 @@
         right: 68%;
     }
     .good__slider .slick-arrow.slick-prev {
-        right: 68%;
+        right: 71%;
     }
     .good__slider .slick-arrow.slick-next {
-        right: 25%;
+        right: 22%;
     }
     .helpers__box {
         border: 1px solid #CCCCCC;
@@ -719,18 +873,30 @@
         margin-left: 0px;
     }
     .logo__listone {
-        margin: 0px 0px 0px 0px;
+        flex-grow: 1;
+  flex-shrink: 1;
+  /* set value for the flex basis, the two properties above will evenly 
+  divide the space. */
+  flex-basis: 20px;
+        overflow: hidden;
     }
     .logo__two {
-        margin: 0px 0px 0px 0px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        /* set value for the flex basis, the two properties above will evenly 
+        divide the space. */
+        flex-basis: 20px;
+              overflow: hidden;
     }
     .logo__three {
-        margin: 0px 0px 0px 0px;
+        flex-grow: 1;
+  flex-shrink: 1;
+  /* set value for the flex basis, the two properties above will evenly 
+  divide the space. */
+  flex-basis: 20px;
+        overflow: hidden;
     }
-    .companies {
-        font-size: 35px;
-        line-height: 32px;
-    }
+    
     .logo__list1 {
         max-width: 200px;
         max-height: 70px;
@@ -749,8 +915,13 @@
         padding: 0px 0px 0px 0px;
         border: none;
     }
+
+    .companies {
+        font-size: 35px;
+        line-height: 32px;
+    }
     .our__helpers {
-        margin: 80px auto;
+        margin: 50px auto;
     }
     .helpers__title {
         font-size: 35px;
@@ -765,7 +936,7 @@
         max-height: 680px;
     }
     .our__members {
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
     .deeds__title {
         margin-bottom: 25px;
@@ -776,40 +947,38 @@
         line-height: 58px;
     }
     .want__inner {
-        padding: 10px 5px 30px 2px;
-    }
-    .want__form {
+        padding: 10px 0px 30px 5px;
         max-width: 375px;
-        max-height: 526px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
     }
     .wanthelp {
         background-color: #00A0E3;
-        max-width: 1190px;
+        max-width: 375px;
     }
     .want__text {
-        width: 375px;
+        width: 352px;
     }
     .want__wrapper {
         top: 0px;
     }
     .name {
-        width: 352px;
+        max-width: 352px;
     }
     .telephone {
-        width: 352px;
+        max-width: 352px;
     }
     .send__info {
-        width: 352px;
+        max-width: 352px;
     }
     .about__form {
-        width: 352px;
+        max-width: 352px;
     }
+    .want__help {
+        max-width: 374px;
+    }
+
     .want__image {
-        left: 0%;
-        bottom: 5px;
+        
+        margin: 0 auto;
     }
     .footer {
         margin-top: 270px;
@@ -821,13 +990,16 @@
         margin-right: 5px;
     }
     .insta__footer {
-        margin: 0 auto;
+        margin: 0 ;
     }
     .our__projects {
         margin-bottom: 50px;
     }
-}
 
+    .qr {
+        background: none;
+}
+}
 @media(max-width:320px) {
     .top__charity {
         padding-top: 20px;
